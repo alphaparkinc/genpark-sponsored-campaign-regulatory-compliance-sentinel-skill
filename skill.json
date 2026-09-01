@@ -1,0 +1,38 @@
+{
+  "name": "genpark-sponsored-campaign-regulatory-compliance-sentinel-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Sponsored campaign regulatory compliance sentinel auditing FTC endorsement hashtags, disclosure placements, and claim veracity.",
+  "author": "genpark",
+  "category": "regulatory-compliance",
+  "tags": [
+    "ftc-compliance",
+    "ad-disclosure-checker",
+    "influencer-regulations",
+    "sponsored-post-audit",
+    "brand-safety"
+  ],
+  "inputs": {
+    "post_caption_text": {
+      "type": "string"
+    },
+    "ftc_disclosure_ruleset": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "sentinel_check_id": {
+      "type": "string"
+    },
+    "ftc_clear_and_conspicuous": {
+      "type": "boolean"
+    },
+    "compliance_audit_verdict": {
+      "type": "string"
+    },
+    "compliance_snapshot_url": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
